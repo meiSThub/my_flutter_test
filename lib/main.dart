@@ -1,0 +1,76 @@
+import 'package:flutter/material.dart';
+import 'package:my_flutter_test/router/page_num.dart';
+
+import 'bean/page_route_bean.dart';
+import 'router/route_path.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        routes: routerPath, // 页面路由
+        theme: ThemeData(
+          primarySwatch: Colors.blue, // 主题色
+        ),
+        home: Scaffold(
+          appBar: AppBar(title: const Text("首页")),
+          body: const HomeContent(),
+        ));
+  }
+}
+
+class HomeContent extends StatefulWidget {
+  const HomeContent({Key? key}) : super(key: key);
+
+  @override
+  State<StatefulWidget> createState() => HomeContentState();
+}
+
+class HomeContentState extends State<HomeContent> {
+  // 页面路由
+  get _pageRouteList => _buildDataList();
+
+  @override
+  Widget build(BuildContext context) {
+    return GridView.builder(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 3,
+          mainAxisSpacing: 10,
+          crossAxisSpacing: 10,
+        ),
+        padding: const EdgeInsets.all(10),
+        shrinkWrap: true,
+        itemCount: _pageRouteList.length,
+        clipBehavior: Clip.antiAliasWithSaveLayer,
+        itemBuilder: (context, index) => _buildItemView(_pageRouteList[index]));
+  }
+
+  /// 创建item view
+  Widget _buildItemView(PageRouteBean item) {
+    return ElevatedButton(
+      child: Text(item.name),
+      onPressed: () {
+        Navigator.pushNamed(context, item.routeUrl);
+      },
+    );
+  }
+
+  /// 创建列表数据
+  List<PageRouteBean> _buildDataList() {
+    return [
+      PageRouteBean("Container组件", PageNum.containersHome),
+      PageRouteBean("Text组件", PageNum.textHome),
+      PageRouteBean("Image组件", PageNum.imageHome),
+      PageRouteBean("Container3", "1000"),
+      PageRouteBean("Container4", "1000"),
+    ];
+  }
+}
+
+
