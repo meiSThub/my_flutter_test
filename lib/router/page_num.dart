@@ -13,6 +13,7 @@ class PageNum {
   static String paddingWidgetTestPage = "1010";
   static String rowWidgetTestPage = "1011";
   static String columnWidgetTestPage = "1012";
+  static String expandedWidgetTestPage = "1013";
   static String textHome = "2000";
   static String imageHome = "3000";
   static String customWidgetTestPage = "4000";

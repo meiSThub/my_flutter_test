@@ -32,6 +32,7 @@ class _ContainerTestPageState extends BasePageState<ContainerHomePage> {
       PageRouteBean("Padding组件", PageNum.paddingWidgetTestPage),
       PageRouteBean("Row水平线性组件", PageNum.rowWidgetTestPage),
       PageRouteBean("Column垂直线性组件", PageNum.columnWidgetTestPage),
+      PageRouteBean("Expanded按照权重划分父容器空间", PageNum.expandedWidgetTestPage),
     ];
   }
 

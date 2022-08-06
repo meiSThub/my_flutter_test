@@ -1,6 +1,7 @@
 import 'package:my_flutter_test/container/column/column_widget_test.dart';
 import 'package:my_flutter_test/container/container_home_page.dart';
 import 'package:my_flutter_test/container/container_widget_test.dart';
+import 'package:my_flutter_test/container/expanded/expanded_widget_test.dart';
 import 'package:my_flutter_test/container/gridview/grid_view_test1.dart';
 import 'package:my_flutter_test/container/gridview/grid_view_test2.dart';
 import 'package:my_flutter_test/container/gridview/grid_view_test3.dart';
@@ -38,6 +39,8 @@ final routerPath = {
   PageNum.rowWidgetTestPage: (context) => const RowWidgetTestPage(),
   // Column 垂直线性布局组件
   PageNum.columnWidgetTestPage: (context) => const ColumnWidgetTestPage(),
+  // Expanded 按照权重划分父容器空间
+  PageNum.expandedWidgetTestPage: (context) => const ExpandedWidgetTestPage(),
   // 文案组件
   PageNum.textHome: (context) => const TextWidgetTestPage(),
   // 图片组件
