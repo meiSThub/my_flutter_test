@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-///  图片测试类
+///  图片组件测试类
+///  图形组件：Image，NetworkImage
 class ImageTestPage extends StatelessWidget {
   const ImageTestPage({Key? key}) : super(key: key);
 
