@@ -9,6 +9,7 @@ import 'package:my_flutter_test/container/listview/list_view_test2.dart';
 import 'package:my_flutter_test/container/listview/list_view_test3.dart';
 import 'package:my_flutter_test/container/listview/list_view_test4.dart';
 import 'package:my_flutter_test/container/padding/padding_widget_test.dart';
+import 'package:my_flutter_test/customwidget/custom_widget_test.dart';
 import 'package:my_flutter_test/image/image_widget_test.dart';
 import 'package:my_flutter_test/router/page_num.dart';
 import 'package:my_flutter_test/text/text_widget_test.dart';
@@ -35,4 +36,6 @@ final routerPath = {
   PageNum.textHome: (context) => const TextWidgetTestPage(),
   // 图片组件
   PageNum.imageHome: (context) => const ImageTestPage(),
+  // 自定义组件
+  PageNum.customWidgetTestPage: (context) => const CustomWidgetTestPage(),
 };

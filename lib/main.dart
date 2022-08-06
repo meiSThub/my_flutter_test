@@ -67,7 +67,7 @@ class HomeContentState extends State<HomeContent> {
       PageRouteBean("Container组件", PageNum.containersHome),
       PageRouteBean("Text组件", PageNum.textHome),
       PageRouteBean("Image组件", PageNum.imageHome),
-      PageRouteBean("Container3", "1000"),
+      PageRouteBean("自定义组件", PageNum.customWidgetTestPage),
       PageRouteBean("Container4", "1000"),
     ];
   }
