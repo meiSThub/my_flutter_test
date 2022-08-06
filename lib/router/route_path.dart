@@ -1,5 +1,9 @@
 import 'package:my_flutter_test/container/container_home_page.dart';
 import 'package:my_flutter_test/container/container_widget_test.dart';
+import 'package:my_flutter_test/container/gridview/grid_view_test1.dart';
+import 'package:my_flutter_test/container/gridview/grid_view_test2.dart';
+import 'package:my_flutter_test/container/gridview/grid_view_test3.dart';
+import 'package:my_flutter_test/container/gridview/grid_view_test4.dart';
 import 'package:my_flutter_test/container/listview/list_view_test1.dart';
 import 'package:my_flutter_test/container/listview/list_view_test2.dart';
 import 'package:my_flutter_test/container/listview/list_view_test3.dart';
@@ -19,6 +23,11 @@ final routerPath = {
   PageNum.listViwTestPage2: (context) => const ListViwTestPage2(),
   PageNum.listViwTestPage3: (context) => const ListViwTestPage3(),
   PageNum.listViwTestPage4: (context) => const ListViwTestPage4(),
+  // GridView组件
+  PageNum.gridViewTestPage1: (context) => const GridViewTestPage1(),
+  PageNum.gridViewTestPage2: (context) => const GridViewTestPage2(),
+  PageNum.gridViewTestPage3: (context) => const GridViewTestPage3(),
+  PageNum.gridViewTestPage4: (context) => const GridViewTestPage4(),
   // 文案组件
   PageNum.textHome: (context) => const TextWidgetTestPage(),
   // 图片组件
