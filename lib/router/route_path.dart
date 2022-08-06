@@ -1,6 +1,7 @@
 import 'package:my_flutter_test/container/column/column_widget_test.dart';
 import 'package:my_flutter_test/container/container_home_page.dart';
 import 'package:my_flutter_test/container/container_widget_test.dart';
+import 'package:my_flutter_test/container/expanded/expanded_row_column_mix_test.dart';
 import 'package:my_flutter_test/container/expanded/expanded_widget_test.dart';
 import 'package:my_flutter_test/container/gridview/grid_view_test1.dart';
 import 'package:my_flutter_test/container/gridview/grid_view_test2.dart';
@@ -41,6 +42,8 @@ final routerPath = {
   PageNum.columnWidgetTestPage: (context) => const ColumnWidgetTestPage(),
   // Expanded 按照权重划分父容器空间
   PageNum.expandedWidgetTestPage: (context) => const ExpandedWidgetTestPage(),
+  // Expanded ，Row 和 Column 混合使用，实现一个一拖二的楼层
+  PageNum.expandedRowColumnMixPage: (context) => const ExpandedRowColumnMixPage(),
   // 文案组件
   PageNum.textHome: (context) => const TextWidgetTestPage(),
   // 图片组件
