@@ -15,6 +15,9 @@ class PageNum {
   static String columnWidgetTestPage = "1012";
   static String expandedWidgetTestPage = "1013";
   static String expandedRowColumnMixPage = "1014";
+  static String stackWidgetTestPage = "1015";
+  static String stackAlignWidgetTestPage = "1016";
+  static String stackPositionedWidgetTestPage = "1017";
   static String textHome = "2000";
   static String imageHome = "3000";
   static String customWidgetTestPage = "4000";

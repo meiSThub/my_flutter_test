@@ -13,6 +13,9 @@ import 'package:my_flutter_test/container/listview/list_view_test3.dart';
 import 'package:my_flutter_test/container/listview/list_view_test4.dart';
 import 'package:my_flutter_test/container/padding/padding_widget_test.dart';
 import 'package:my_flutter_test/container/row/row_widget_test.dart';
+import 'package:my_flutter_test/container/stack/stack_align_widget_test.dart';
+import 'package:my_flutter_test/container/stack/stack_positioned_widget_test.dart';
+import 'package:my_flutter_test/container/stack/stack_widget_test.dart';
 import 'package:my_flutter_test/customwidget/custom_widget_test.dart';
 import 'package:my_flutter_test/image/image_widget_test.dart';
 import 'package:my_flutter_test/router/page_num.dart';
@@ -44,6 +47,10 @@ final routerPath = {
   PageNum.expandedWidgetTestPage: (context) => const ExpandedWidgetTestPage(),
   // Expanded ，Row 和 Column 混合使用，实现一个一拖二的楼层
   PageNum.expandedRowColumnMixPage: (context) => const ExpandedRowColumnMixPage(),
+  // Stack 层级布局组件
+  PageNum.stackWidgetTestPage: (context) => const StackWidgetTestPage(),
+  PageNum.stackAlignWidgetTestPage: (context) => const StackAlignWidgetTestPage(),
+  PageNum.stackPositionedWidgetTestPage: (context) => const StackPositionedWidgetTestPage(),
   // 文案组件
   PageNum.textHome: (context) => const TextWidgetTestPage(),
   // 图片组件

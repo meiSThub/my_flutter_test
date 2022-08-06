@@ -35,6 +35,9 @@ class _ContainerTestPageState extends BasePageState<ContainerHomePage> {
       PageRouteBean("Expanded按照权重划分父容器空间", PageNum.expandedWidgetTestPage),
       PageRouteBean("Expanded ，Row 和 Column 混合使用，实现一个一拖二的楼层",
           PageNum.expandedRowColumnMixPage),
+      PageRouteBean("Stack层级布局组件", PageNum.stackWidgetTestPage),
+      PageRouteBean("Stack搭配Align层级布局", PageNum.stackAlignWidgetTestPage),
+      PageRouteBean("Stack搭配Positioned层级布局", PageNum.stackPositionedWidgetTestPage),
     ];
   }
 
