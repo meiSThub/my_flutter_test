@@ -21,7 +21,10 @@ class _ContainerTestPageState extends BasePageState<ContainerHomePage> {
   List<PageRouteBean> _buildDataList() {
     return [
       PageRouteBean("Container组件", PageNum.containerWidget),
-      PageRouteBean("Container组件", PageNum.containersHome),
+      PageRouteBean("ListView静态垂直列表", PageNum.listViwTestPage1),
+      PageRouteBean("ListView静态水平列表", PageNum.listViwTestPage2),
+      PageRouteBean("ListView动态垂直列表", PageNum.listViwTestPage3),
+      PageRouteBean("ListView动态垂直列表，builder方式", PageNum.listViwTestPage4),
       PageRouteBean("Container组件", PageNum.containersHome),
       PageRouteBean("Container组件", PageNum.containersHome),
     ];
