@@ -11,6 +11,7 @@ class PageNum {
   static String gridViewTestPage3 = "1008";
   static String gridViewTestPage4 = "1009";
   static String paddingWidgetTestPage = "1010";
+  static String rowWidgetTestPage = "1011";
   static String textHome = "2000";
   static String imageHome = "3000";
   static String customWidgetTestPage = "4000";
