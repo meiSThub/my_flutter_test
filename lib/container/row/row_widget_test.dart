@@ -20,9 +20,12 @@ class RowWidgetTestPageState extends BasePageState<RowWidgetTestPage> {
       height: 300,
       color: Colors.deepPurple,
       child: Row(
-        // 设置子View的水平对齐方式，如：MainAxisAlignment.spaceEvenly ，子View均匀分开，间距相等
+        // 针对水平方向的线性布局组件来说，主轴就是水平方向，次轴就是垂直方向
+        // mainAxisAlignment 主轴设置的就是水平方向的对齐方式
+        // crossAxisAlignment：次轴，设置的就是垂直方向的对齐方式
+        // 主轴：设置子View的水平对齐方式，如：MainAxisAlignment.spaceEvenly ，子View均匀分开，间距相等
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        // 子View 在容器的垂直方向上的对齐方式
+        // 次轴：子View 在容器的垂直方向上的对齐方式
         crossAxisAlignment: CrossAxisAlignment.start,
         // 水平线性布局Row的 子View 列表
         children: const [

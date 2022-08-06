@@ -1,3 +1,4 @@
+import 'package:my_flutter_test/container/column/column_widget_test.dart';
 import 'package:my_flutter_test/container/container_home_page.dart';
 import 'package:my_flutter_test/container/container_widget_test.dart';
 import 'package:my_flutter_test/container/gridview/grid_view_test1.dart';
@@ -35,6 +36,8 @@ final routerPath = {
   PageNum.paddingWidgetTestPage: (context) => const PaddingWidgetTestPage(),
   // Row 水平线性布局组件
   PageNum.rowWidgetTestPage: (context) => const RowWidgetTestPage(),
+  // Column 垂直线性布局组件
+  PageNum.columnWidgetTestPage: (context) => const ColumnWidgetTestPage(),
   // 文案组件
   PageNum.textHome: (context) => const TextWidgetTestPage(),
   // 图片组件
