@@ -29,7 +29,7 @@ class _ContainerTestPageState extends BasePageState<ContainerHomePage> {
       PageRouteBean("GridView垂直动态列表，count方式", PageNum.gridViewTestPage2),
       PageRouteBean("GridView垂直静态列表，builder方式", PageNum.gridViewTestPage3),
       PageRouteBean("GridView水平动态列表，builder方式", PageNum.gridViewTestPage4),
-      PageRouteBean("Container组件", PageNum.containersHome),
+      PageRouteBean("Padding组件", PageNum.paddingWidgetTestPage),
       PageRouteBean("Container组件", PageNum.containersHome),
     ];
   }
