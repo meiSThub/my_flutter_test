@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_test/appbar/appbar_add_top_tabs_test_page.dart';
+import 'package:my_flutter_test/appbar/appbar_add_top_tabs_test_page2.dart';
+import 'package:my_flutter_test/appbar/appbar_add_top_tabs_test_page3.dart';
 import 'package:my_flutter_test/appbar/appbar_home_page.dart';
 import 'package:my_flutter_test/appbar/appbar_normal_use_page.dart';
 import 'package:my_flutter_test/bottomnavigationbar/bottom_navigation_bar_test_page.dart';
@@ -105,6 +108,9 @@ final routerPath = {
   // AppBar 使用
   PageNum.appbarHomePage: (context) => const AppbarHomePage(),
   PageNum.appbarNormalUsedPage: (context) => const AppbarNormalUsedPage(),
+  PageNum.appbarAddTopTabsTestPage: (context) => const AppbarAddTopTabsTestPage(),
+  PageNum.appbarAddTopTabsTestPage2: (context) => const AppbarAddTopTabsTestPage2(),
+  PageNum.appbarAddTopTabsTestPage3: (context) => const AppbarAddTopTabsTestPage3(),
 };
 
 /// 2.定义创建路由与传参的方法，固定写法

@@ -25,6 +25,24 @@ class _AppbarHomePageState extends BasePageState {
           },
           child: const Text("AppBar的基础使用"),
         ),
+        ElevatedButton(
+          onPressed: () {
+            Navigator.pushNamed(context, PageNum.appbarAddTopTabsTestPage);
+          },
+          child: const Text("AppBar的添加顶部tab"),
+        ),
+        ElevatedButton(
+          onPressed: () {
+            Navigator.pushNamed(context, PageNum.appbarAddTopTabsTestPage2);
+          },
+          child: const Text("在有导航栏的页面添加tab"),
+        ),
+        ElevatedButton(
+          onPressed: () {
+            Navigator.pushNamed(context, PageNum.appbarAddTopTabsTestPage3);
+          },
+          child: const Text("在有导航栏的页面添加tab,解决会出现多个导航栏的问题"),
+        ),
       ],
     );
   }
