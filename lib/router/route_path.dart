@@ -3,10 +3,12 @@ import 'package:my_flutter_test/container/container_home_page.dart';
 import 'package:my_flutter_test/container/container_widget_test.dart';
 import 'package:my_flutter_test/container/expanded/expanded_row_column_mix_test.dart';
 import 'package:my_flutter_test/container/expanded/expanded_widget_test.dart';
+import 'package:my_flutter_test/container/gridview/grid_view_home.dart';
 import 'package:my_flutter_test/container/gridview/grid_view_test1.dart';
 import 'package:my_flutter_test/container/gridview/grid_view_test2.dart';
 import 'package:my_flutter_test/container/gridview/grid_view_test3.dart';
 import 'package:my_flutter_test/container/gridview/grid_view_test4.dart';
+import 'package:my_flutter_test/container/listview/list_view_home.dart';
 import 'package:my_flutter_test/container/listview/list_view_test1.dart';
 import 'package:my_flutter_test/container/listview/list_view_test2.dart';
 import 'package:my_flutter_test/container/listview/list_view_test3.dart';
@@ -15,6 +17,7 @@ import 'package:my_flutter_test/container/padding/padding_widget_test.dart';
 import 'package:my_flutter_test/container/row/row_widget_test.dart';
 import 'package:my_flutter_test/container/stack/stack_align_widget_test.dart';
 import 'package:my_flutter_test/container/stack/stack_positioned_widget_test.dart';
+import 'package:my_flutter_test/container/stack/stack_widget_home_page.dart';
 import 'package:my_flutter_test/container/stack/stack_widget_test.dart';
 import 'package:my_flutter_test/customwidget/custom_widget_test.dart';
 import 'package:my_flutter_test/image/image_widget_test.dart';
@@ -28,11 +31,13 @@ final routerPath = {
   // Container 组件
   PageNum.containerWidget: (context) => const ContainerWidgetTestPage(),
   // ListView组件
+  PageNum.listViwHomePage: (context) => const ListViwHomePage(),
   PageNum.listViwTestPage1: (context) => const ListViwTestPage1(),
   PageNum.listViwTestPage2: (context) => const ListViwTestPage2(),
   PageNum.listViwTestPage3: (context) => const ListViwTestPage3(),
   PageNum.listViwTestPage4: (context) => const ListViwTestPage4(),
   // GridView组件
+  PageNum.gridViewHomeTestPage: (context) => const GridViewHomeTestPage(),
   PageNum.gridViewTestPage1: (context) => const GridViewTestPage1(),
   PageNum.gridViewTestPage2: (context) => const GridViewTestPage2(),
   PageNum.gridViewTestPage3: (context) => const GridViewTestPage3(),
@@ -48,6 +53,7 @@ final routerPath = {
   // Expanded ，Row 和 Column 混合使用，实现一个一拖二的楼层
   PageNum.expandedRowColumnMixPage: (context) => const ExpandedRowColumnMixPage(),
   // Stack 层级布局组件
+  PageNum.stackWidgetHomePage: (context) => const StackWidgetHomePage(),
   PageNum.stackWidgetTestPage: (context) => const StackWidgetTestPage(),
   PageNum.stackAlignWidgetTestPage: (context) => const StackAlignWidgetTestPage(),
   PageNum.stackPositionedWidgetTestPage: (context) => const StackPositionedWidgetTestPage(),

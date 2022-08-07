@@ -21,23 +21,15 @@ class _ContainerTestPageState extends BasePageState<ContainerHomePage> {
   List<PageRouteBean> _buildDataList() {
     return [
       PageRouteBean("Container组件", PageNum.containerWidget),
-      PageRouteBean("ListView静态垂直列表", PageNum.listViwTestPage1),
-      PageRouteBean("ListView静态水平列表", PageNum.listViwTestPage2),
-      PageRouteBean("ListView动态垂直列表", PageNum.listViwTestPage3),
-      PageRouteBean("ListView动态垂直列表，builder方式", PageNum.listViwTestPage4),
-      PageRouteBean("GridView垂直静态列表，count方式", PageNum.gridViewTestPage1),
-      PageRouteBean("GridView垂直动态列表，count方式", PageNum.gridViewTestPage2),
-      PageRouteBean("GridView垂直静态列表，builder方式", PageNum.gridViewTestPage3),
-      PageRouteBean("GridView水平动态列表，builder方式", PageNum.gridViewTestPage4),
+      PageRouteBean("ListView首页", PageNum.listViwHomePage),
+      PageRouteBean("GridView首页", PageNum.gridViewHomeTestPage),
       PageRouteBean("Padding组件", PageNum.paddingWidgetTestPage),
       PageRouteBean("Row水平线性组件", PageNum.rowWidgetTestPage),
       PageRouteBean("Column垂直线性组件", PageNum.columnWidgetTestPage),
       PageRouteBean("Expanded按照权重划分父容器空间", PageNum.expandedWidgetTestPage),
       PageRouteBean("Expanded ，Row 和 Column 混合使用，实现一个一拖二的楼层",
           PageNum.expandedRowColumnMixPage),
-      PageRouteBean("Stack层级布局组件", PageNum.stackWidgetTestPage),
-      PageRouteBean("Stack搭配Align层级布局", PageNum.stackAlignWidgetTestPage),
-      PageRouteBean("Stack搭配Positioned层级布局", PageNum.stackPositionedWidgetTestPage),
+      PageRouteBean("Stack相关容器组件首页", PageNum.stackWidgetHomePage),
     ];
   }
 
