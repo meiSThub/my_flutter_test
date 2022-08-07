@@ -35,11 +35,17 @@ class _BottomNavigationBarTestPageState extends State {
           iconSize: 36,
           // tab选中时的颜色
           fixedColor: Colors.red,
+          // 当tab比较多的时候，设置该属性，使其能够正常显示，但不可以滚动，还是一行显示
+          type: BottomNavigationBarType.fixed,
           // tab view
           items: const [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: "首页"),
             BottomNavigationBarItem(icon: Icon(Icons.category), label: "分类"),
             BottomNavigationBarItem(icon: Icon(Icons.person), label: "个人中心"),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: "个人中心2"),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: "个人中心3"),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: "个人中心4"),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: "个人中心5"),
           ],
         ),
       ),
