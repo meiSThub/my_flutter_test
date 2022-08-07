@@ -41,4 +41,6 @@ class PageNum {
   static String back2RootTestPage = "5006";
   static String registerPage3 = "5007";
   static String registerPage4 = "5008";
+  static String appbarHomePage = "5010";
+  static String appbarNormalUsedPage = "5011";
 }

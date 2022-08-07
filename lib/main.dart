@@ -21,9 +21,12 @@ class MyApp extends StatelessWidget {
         routes: routerPath,
         // 命名路由传参；routes 和 onGenerateRoute 参数可以共存
         onGenerateRoute: onGenerateRoute,
+        // 修改主题色
         theme: ThemeData(
           primarySwatch: Colors.blue, // 主题色
         ),
+        // 是否显示debug图标，默认为true，即显示，设置成false就可以关闭
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
           appBar: AppBar(title: const Text("首页")),
           body: const HomeContent(),
@@ -79,6 +82,7 @@ class HomeContentState extends State<HomeContent> {
           "BottomNavigationBar底部导航栏", PageNum.bottomNavigationBarTestPage),
       PageRouteBean("实现App首页", PageNum.myHomePage),
       PageRouteBean("路由跳转", PageNum.routeSkipHomePage),
+      PageRouteBean("AppBar导航栏组件", PageNum.appbarHomePage),
     ];
   }
 }
