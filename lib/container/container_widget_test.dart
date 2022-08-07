@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter_test/base/base_page.dart';
 
-// Container 容器组件，Container组件 相当于 h5 中的 div 标签，表示一个块
+/// Container 容器组件，Container组件 相当于 h5 中的 div 标签，表示一个块
+/// Container 在最外层的时候，默认铺满整个屏幕
 class ContainerWidgetTestPage extends BasePageWidget {
   const ContainerWidgetTestPage({Key? key}) : super(key: key);
 
@@ -19,7 +20,7 @@ class _ContainerWidgetTestPageState
     return Center(
       child: Container(
         // Container 的子View
-        child: const Text("Container 容器,曾经有一份真挚的爱情放在我面前，我没有珍惜，直到失去的时候才追悔莫及！"),
+        child: const Text("Container 容器, 在最外层的时候，默认铺满整个屏幕，还可以指定大小"),
         // Container 的宽度
         width: 300,
         // Container 高度
