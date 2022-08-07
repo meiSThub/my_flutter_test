@@ -1,4 +1,5 @@
 class PageNum {
+  static String homePage = "/";
   /// 容器首页
   static String containersHome = "1000";
   static String containerWidget = "1001";
@@ -36,4 +37,7 @@ class PageNum {
   static String replaceRouteSkipTestPage = "5002";
   static String registerPage1 = "5003";
   static String registerPage2 = "5004";
+  static String back2RootTestPage = "5005";
+  static String registerPage3 = "5006";
+  static String registerPage4 = "5007";
 }

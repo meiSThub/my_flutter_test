@@ -15,7 +15,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        routes: routerPath, // 页面路由
+        // 指定首页路由
+        initialRoute: PageNum.homePage,
+        // 页面路由
+        routes: routerPath,
         // 命名路由传参；routes 和 onGenerateRoute 参数可以共存
         onGenerateRoute: onGenerateRoute,
         theme: ThemeData(
@@ -78,6 +81,7 @@ class HomeContentState extends State<HomeContent> {
       PageRouteBean("普通路由跳转与传参", PageNum.normalRouteSkipTestPage),
       PageRouteBean("命名路由跳转与传参数", PageNum.namedRouteSkipTestPage),
       PageRouteBean("替换路由方式，进行页面跳转", PageNum.replaceRouteSkipTestPage),
+      PageRouteBean("通过路由，回退到指定的页面", PageNum.back2RootTestPage),
     ];
   }
 }

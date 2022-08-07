@@ -29,6 +29,7 @@ import 'package:my_flutter_test/container/stack/stack_widget_test.dart';
 import 'package:my_flutter_test/container/wrap/aspect_ration_widget_test.dart';
 import 'package:my_flutter_test/customwidget/custom_widget_test.dart';
 import 'package:my_flutter_test/image/image_widget_test.dart';
+import 'package:my_flutter_test/pageskip/backroot/back_to_root_test_page.dart';
 import 'package:my_flutter_test/pageskip/namedroute/named_route_skip_test_page.dart';
 import 'package:my_flutter_test/pageskip/normalroute/normal_route_skip_test_page.dart';
 import 'package:my_flutter_test/pageskip/replaceroute/replace_route_skip_test_page.dart';
@@ -93,6 +94,10 @@ final routerPath = {
   PageNum.replaceRouteSkipTestPage: (context) => const ReplaceRouteSkipTestPage(),
   PageNum.registerPage1: (context) => const RegisterPage1(),
   PageNum.registerPage2: (context) => const RegisterPage2(),
+  // 通过路由，回退到指定的页面
+  PageNum.back2RootTestPage: (context) => const Back2RootTestPage(),
+  PageNum.registerPage3: (context) => const RegisterPage3(),
+  PageNum.registerPage4: (context) => const RegisterPage4(),
 };
 
 /// 2.定义创建路由与传参的方法，固定写法
