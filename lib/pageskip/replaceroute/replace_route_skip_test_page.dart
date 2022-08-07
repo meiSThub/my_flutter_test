@@ -27,6 +27,8 @@ class _ReplaceRouteSkipTestPageState extends BasePageState {
           ElevatedButton(
             onPressed: () {
               Navigator.pushNamed(context, PageNum.registerPage1);
+              // 如果通过这种方式跳转，则在注册完成时会直接返回到首页
+              // Navigator.pushReplacementNamed(context, PageNum.registerPage1);
             },
             child: const Text("跳转子页面"),
           ),
