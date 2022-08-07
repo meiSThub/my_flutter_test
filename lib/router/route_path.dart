@@ -31,6 +31,7 @@ import 'package:my_flutter_test/customwidget/custom_widget_test.dart';
 import 'package:my_flutter_test/image/image_widget_test.dart';
 import 'package:my_flutter_test/pageskip/namedroute/named_route_skip_test_page.dart';
 import 'package:my_flutter_test/pageskip/normalroute/normal_route_skip_test_page.dart';
+import 'package:my_flutter_test/pageskip/replaceroute/replace_route_skip_test_page.dart';
 import 'package:my_flutter_test/router/page_num.dart';
 import 'package:my_flutter_test/text/text_widget_test.dart';
 
@@ -89,6 +90,9 @@ final routerPath = {
   PageNum.normalRouteSkipTestPage: (context) => const NormalRouteSkipTestPage(),
   // 命名路由跳转与传参
   PageNum.namedRouteSkipTestPage: (context) => const NamedRouteSkipTestPage(),
+  PageNum.replaceRouteSkipTestPage: (context) => const ReplaceRouteSkipTestPage(),
+  PageNum.registerPage1: (context) => const RegisterPage1(),
+  PageNum.registerPage2: (context) => const RegisterPage2(),
 };
 
 /// 2.定义创建路由与传参的方法，固定写法

@@ -7,7 +7,7 @@ final routes = {
   '/thirdPage': (context) => _ThirdPage(),
 };
 
-/// 普通页面路由跳转
+/// 命名路由页面跳转与传参
 class NamedRouteSkipTestPage extends StatefulWidget {
   const NamedRouteSkipTestPage({Key? key}) : super(key: key);
 

@@ -46,6 +46,7 @@ class HomeContentState extends State<HomeContent> {
           crossAxisCount: 3,
           mainAxisSpacing: 10,
           crossAxisSpacing: 10,
+          childAspectRatio: 2 / 1,
         ),
         padding: const EdgeInsets.all(10),
         shrinkWrap: true,
@@ -71,12 +72,12 @@ class HomeContentState extends State<HomeContent> {
       PageRouteBean("Text组件", PageNum.textHome),
       PageRouteBean("Image组件", PageNum.imageHome),
       PageRouteBean("自定义组件", PageNum.customWidgetTestPage),
-      PageRouteBean("BottomNavigationBar底部导航栏", PageNum.bottomNavigationBarTestPage),
+      PageRouteBean(
+          "BottomNavigationBar底部导航栏", PageNum.bottomNavigationBarTestPage),
       PageRouteBean("实现App首页", PageNum.myHomePage),
       PageRouteBean("普通路由跳转与传参", PageNum.normalRouteSkipTestPage),
       PageRouteBean("命名路由跳转与传参数", PageNum.namedRouteSkipTestPage),
+      PageRouteBean("替换路由方式，进行页面跳转", PageNum.replaceRouteSkipTestPage),
     ];
   }
 }
-
-
