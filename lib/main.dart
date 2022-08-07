@@ -78,10 +78,7 @@ class HomeContentState extends State<HomeContent> {
       PageRouteBean(
           "BottomNavigationBar底部导航栏", PageNum.bottomNavigationBarTestPage),
       PageRouteBean("实现App首页", PageNum.myHomePage),
-      PageRouteBean("普通路由跳转与传参", PageNum.normalRouteSkipTestPage),
-      PageRouteBean("命名路由跳转与传参数", PageNum.namedRouteSkipTestPage),
-      PageRouteBean("替换路由方式，进行页面跳转", PageNum.replaceRouteSkipTestPage),
-      PageRouteBean("通过路由，回退到指定的页面", PageNum.back2RootTestPage),
+      PageRouteBean("路由跳转", PageNum.routeSkipHomePage),
     ];
   }
 }

@@ -87,7 +87,7 @@ class RegisterPage4 extends StatelessWidget {
                   // 回退到指定页面
                   Navigator.popUntil(context, (route) {
                     // 回退页面，知道回退到指定的页面为止
-                    return route.settings.name == PageNum.back2RootTestPage;
+                    return route.settings.name == PageNum.routeSkipHomePage;
                   });
                 },
                 child: const Text("注册完成，通过Navigator.popUntil回退到入口页面"))

@@ -32,12 +32,13 @@ class PageNum {
   static String textHome = "2000";
   static String imageHome = "3000";
   static String customWidgetTestPage = "4000";
-  static String normalRouteSkipTestPage = "5000";
-  static String namedRouteSkipTestPage = "5001";
-  static String replaceRouteSkipTestPage = "5002";
-  static String registerPage1 = "5003";
-  static String registerPage2 = "5004";
-  static String back2RootTestPage = "5005";
-  static String registerPage3 = "5006";
-  static String registerPage4 = "5007";
+  static String routeSkipHomePage = "5000";
+  static String normalRouteSkipTestPage = "5001";
+  static String namedRouteSkipTestPage = "5002";
+  static String replaceRouteSkipTestPage = "5003";
+  static String registerPage1 = "5004";
+  static String registerPage2 = "5005";
+  static String back2RootTestPage = "5006";
+  static String registerPage3 = "5007";
+  static String registerPage4 = "5008";
 }
