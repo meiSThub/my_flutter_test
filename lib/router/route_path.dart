@@ -23,6 +23,7 @@ import 'package:my_flutter_test/container/stack/stack_align_widget_test.dart';
 import 'package:my_flutter_test/container/stack/stack_positioned_widget_test.dart';
 import 'package:my_flutter_test/container/stack/stack_widget_home_page.dart';
 import 'package:my_flutter_test/container/stack/stack_widget_test.dart';
+import 'package:my_flutter_test/container/wrap/aspect_ration_widget_test.dart';
 import 'package:my_flutter_test/customwidget/custom_widget_test.dart';
 import 'package:my_flutter_test/image/image_widget_test.dart';
 import 'package:my_flutter_test/router/page_num.dart';
@@ -67,6 +68,8 @@ final routerPath = {
   PageNum.cardWidgetHomePage: (context) => const CardWidgetHomePage(),
   PageNum.cardWidgetNormalPage: (context) => const CardWidgetNormalPage(),
   PageNum.cardWidgetAdvancedPage: (context) => const CardWidgetAdvancedPage(),
+  // Wrap 流布局组件
+  PageNum.wrapWidgetTestPage: (context) => const WrapWidgetTestPage(),
   // 文案组件
   PageNum.textHome: (context) => const TextWidgetTestPage(),
   // 图片组件
