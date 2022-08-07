@@ -28,6 +28,8 @@ import 'package:my_flutter_test/container/stack/stack_widget_test.dart';
 import 'package:my_flutter_test/container/wrap/aspect_ration_widget_test.dart';
 import 'package:my_flutter_test/customwidget/custom_widget_test.dart';
 import 'package:my_flutter_test/image/image_widget_test.dart';
+import 'package:my_flutter_test/pageskip/namedroute/named_route_skip_test_page.dart';
+import 'package:my_flutter_test/pageskip/normalroute/normal_route_skip_test_page.dart';
 import 'package:my_flutter_test/router/page_num.dart';
 import 'package:my_flutter_test/text/text_widget_test.dart';
 
@@ -82,4 +84,9 @@ final routerPath = {
   PageNum.imageHome: (context) => const ImageTestPage(),
   // 自定义组件
   PageNum.customWidgetTestPage: (context) => const CustomWidgetTestPage(),
+  // 页面路由跳转，普通路由跳转与传参
+  PageNum.normalRouteSkipTestPage: (context) => const NormalRouteSkipTestPage(),
+  // 命名路由跳转与传参
+  PageNum.namedRouteSkipTestPage: (context) => const NamedRouteSkipTestPage(),
 };
+

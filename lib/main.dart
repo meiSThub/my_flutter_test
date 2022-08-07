@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_test/pageskip/namedroute/named_route_skip_test_page.dart';
 import 'package:my_flutter_test/router/page_num.dart';
 
 import 'bean/page_route_bean.dart';
@@ -15,6 +16,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         routes: routerPath, // 页面路由
+        // 命名路由传参；routes 和 onGenerateRoute 参数可以共存
+        onGenerateRoute: onGenerateRoute,
         theme: ThemeData(
           primarySwatch: Colors.blue, // 主题色
         ),
@@ -70,6 +73,8 @@ class HomeContentState extends State<HomeContent> {
       PageRouteBean("自定义组件", PageNum.customWidgetTestPage),
       PageRouteBean("BottomNavigationBar底部导航栏", PageNum.bottomNavigationBarTestPage),
       PageRouteBean("实现App首页", PageNum.myHomePage),
+      PageRouteBean("普通路由跳转与传参", PageNum.normalRouteSkipTestPage),
+      PageRouteBean("命名路由跳转与传参数", PageNum.namedRouteSkipTestPage),
     ];
   }
 }

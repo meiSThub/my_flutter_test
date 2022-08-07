@@ -31,4 +31,6 @@ class PageNum {
   static String textHome = "2000";
   static String imageHome = "3000";
   static String customWidgetTestPage = "4000";
+  static String normalRouteSkipTestPage = "5000";
+  static String namedRouteSkipTestPage = "5001";
 }
