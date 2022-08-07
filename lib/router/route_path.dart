@@ -1,3 +1,5 @@
+import 'package:my_flutter_test/bottomnavigationbar/bottom_navigation_bar_test_page.dart';
+import 'package:my_flutter_test/bottomnavigationbar/my_home_page.dart';
 import 'package:my_flutter_test/container/aspectratio/aspect_ration_widget_test.dart';
 import 'package:my_flutter_test/container/card/card_widget_advanced_test.dart';
 import 'package:my_flutter_test/container/card/card_widget_home.dart';
@@ -70,6 +72,10 @@ final routerPath = {
   PageNum.cardWidgetAdvancedPage: (context) => const CardWidgetAdvancedPage(),
   // Wrap 流布局组件
   PageNum.wrapWidgetTestPage: (context) => const WrapWidgetTestPage(),
+  // BottomNavigationBar 底部导航栏
+  PageNum.bottomNavigationBarTestPage: (context) => const BottomNavigationBarTestPage(),
+  // 通过BottomNavigationBar，实现App的首页，有三个tab
+  PageNum.myHomePage: (context) => const MyHomePage(),
   // 文案组件
   PageNum.textHome: (context) => const TextWidgetTestPage(),
   // 图片组件

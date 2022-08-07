@@ -26,6 +26,8 @@ class PageNum {
   static String cardWidgetNormalPage = "1023";
   static String cardWidgetAdvancedPage = "1024";
   static String wrapWidgetTestPage = "1025";
+  static String bottomNavigationBarTestPage = "1026";
+  static String myHomePage = "1027";
   static String textHome = "2000";
   static String imageHome = "3000";
   static String customWidgetTestPage = "4000";
