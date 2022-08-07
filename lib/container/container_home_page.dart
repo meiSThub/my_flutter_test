@@ -30,6 +30,7 @@ class _ContainerTestPageState extends BasePageState<ContainerHomePage> {
       PageRouteBean("Expanded ，Row 和 Column 混合使用，实现一个一拖二的楼层",
           PageNum.expandedRowColumnMixPage),
       PageRouteBean("Stack相关容器组件首页", PageNum.stackWidgetHomePage),
+      PageRouteBean("AspectRatio宽高比布局", PageNum.aspectRatioWidgetTestPage),
     ];
   }
 

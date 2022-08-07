@@ -1,3 +1,4 @@
+import 'package:my_flutter_test/container/aspectratio/aspect_ration_widget_test.dart';
 import 'package:my_flutter_test/container/column/column_widget_test.dart';
 import 'package:my_flutter_test/container/container_home_page.dart';
 import 'package:my_flutter_test/container/container_widget_test.dart';
@@ -57,6 +58,8 @@ final routerPath = {
   PageNum.stackWidgetTestPage: (context) => const StackWidgetTestPage(),
   PageNum.stackAlignWidgetTestPage: (context) => const StackAlignWidgetTestPage(),
   PageNum.stackPositionedWidgetTestPage: (context) => const StackPositionedWidgetTestPage(),
+  // AspectRatio 组件，可以根据宽高比，指定子View的宽高
+  PageNum.aspectRatioWidgetTestPage:(context)=>const AspectRatioWidgetTestPage(),
   // 文案组件
   PageNum.textHome: (context) => const TextWidgetTestPage(),
   // 图片组件
