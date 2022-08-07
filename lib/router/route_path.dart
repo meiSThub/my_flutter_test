@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:my_flutter_test/bottomnavigationbar/bottom_navigation_bar_test_page.dart';
 import 'package:my_flutter_test/bottomnavigationbar/my_home_page.dart';
 import 'package:my_flutter_test/container/aspectratio/aspect_ration_widget_test.dart';
@@ -90,3 +91,24 @@ final routerPath = {
   PageNum.namedRouteSkipTestPage: (context) => const NamedRouteSkipTestPage(),
 };
 
+/// 2.定义创建路由与传参的方法，固定写法
+Route? onGenerateRoute(RouteSettings settings) {
+  // 统一处理
+  String name = settings.name ?? "";
+  var pageContentBuilder = routes[name];
+  if (pageContentBuilder != null) {
+    if (settings.arguments != null) {
+      Route route = MaterialPageRoute(
+        builder: (context) {
+          return pageContentBuilder(context, settings.arguments);
+        },
+      );
+      return route;
+    } else {
+      Route route =
+      MaterialPageRoute(builder: (context) => pageContentBuilder(context));
+      return route;
+    }
+  }
+  return null;
+}

@@ -1,33 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:my_flutter_test/base/base_page.dart';
+import 'package:my_flutter_test/router/route_path.dart';
 
 /// 1. 声明一个路由表
 final routes = {
   '/secondPage': (context, arguments) => _SecondPage(arguments: arguments),
   '/thirdPage': (context) => _ThirdPage(),
 };
-
-/// 2.定义创建路由的方法，固定写法
-Route? onGenerateRoute(RouteSettings settings) {
-  // 统一处理
-  String name = settings.name ?? "";
-  var pageContentBuilder = routes[name];
-  if (pageContentBuilder != null) {
-    if (settings.arguments != null) {
-      Route route = MaterialPageRoute(
-        builder: (context) {
-          return pageContentBuilder(context, settings.arguments);
-        },
-      );
-      return route;
-    } else {
-      Route route =
-          MaterialPageRoute(builder: (context) => pageContentBuilder(context));
-      return route;
-    }
-  }
-  return null;
-}
 
 /// 普通页面路由跳转
 class NamedRouteSkipTestPage extends StatefulWidget {
