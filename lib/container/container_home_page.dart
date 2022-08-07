@@ -31,6 +31,7 @@ class _ContainerTestPageState extends BasePageState<ContainerHomePage> {
           PageNum.expandedRowColumnMixPage),
       PageRouteBean("Stack相关容器组件首页", PageNum.stackWidgetHomePage),
       PageRouteBean("AspectRatio宽高比布局", PageNum.aspectRatioWidgetTestPage),
+      PageRouteBean("Card卡片布局组件", PageNum.cardWidgetHomePage),
     ];
   }
 

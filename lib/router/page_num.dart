@@ -22,6 +22,9 @@ class PageNum {
   static String stackAlignWidgetTestPage = "1019";
   static String stackPositionedWidgetTestPage = "1020";
   static String aspectRatioWidgetTestPage = "1021";
+  static String cardWidgetHomePage = "1022";
+  static String cardWidgetNormalPage = "1023";
+  static String cardWidgetAdvancedPage = "1024";
   static String textHome = "2000";
   static String imageHome = "3000";
   static String customWidgetTestPage = "4000";

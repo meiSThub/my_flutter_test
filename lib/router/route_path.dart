@@ -1,4 +1,7 @@
 import 'package:my_flutter_test/container/aspectratio/aspect_ration_widget_test.dart';
+import 'package:my_flutter_test/container/card/card_widget_advanced_test.dart';
+import 'package:my_flutter_test/container/card/card_widget_home.dart';
+import 'package:my_flutter_test/container/card/card_widget_normal_test.dart';
 import 'package:my_flutter_test/container/column/column_widget_test.dart';
 import 'package:my_flutter_test/container/container_home_page.dart';
 import 'package:my_flutter_test/container/container_widget_test.dart';
@@ -60,6 +63,10 @@ final routerPath = {
   PageNum.stackPositionedWidgetTestPage: (context) => const StackPositionedWidgetTestPage(),
   // AspectRatio 组件，可以根据宽高比，指定子View的宽高
   PageNum.aspectRatioWidgetTestPage:(context)=>const AspectRatioWidgetTestPage(),
+  // Card 卡片组件
+  PageNum.cardWidgetHomePage: (context) => const CardWidgetHomePage(),
+  PageNum.cardWidgetNormalPage: (context) => const CardWidgetNormalPage(),
+  PageNum.cardWidgetAdvancedPage: (context) => const CardWidgetAdvancedPage(),
   // 文案组件
   PageNum.textHome: (context) => const TextWidgetTestPage(),
   // 图片组件
