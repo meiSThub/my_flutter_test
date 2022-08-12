@@ -43,6 +43,12 @@ class _AppbarHomePageState extends BasePageState {
           },
           child: const Text("在有导航栏的页面添加tab,解决会出现多个导航栏的问题"),
         ),
+        ElevatedButton(
+          onPressed: () {
+            Navigator.pushNamed(context, PageNum.tabBarControllerTestPage);
+          },
+          child: const Text("通过TabController实现顶部Tab"),
+        ),
       ],
     );
   }

@@ -46,4 +46,5 @@ class PageNum {
   static String appbarAddTopTabsTestPage = "5012";
   static String appbarAddTopTabsTestPage2 = "5013";
   static String appbarAddTopTabsTestPage3 = "5014";
+  static String tabBarControllerTestPage = "5015";
 }

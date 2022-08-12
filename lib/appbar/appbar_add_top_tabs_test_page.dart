@@ -32,6 +32,8 @@ class _AppbarAddTopTabsTestPageState extends State {
               Tab(text: "热门"),
               Tab(text: "推荐"),
             ],
+            // tab 是否可以滚动
+            isScrollable:true,
             // 指示器的颜色
             indicatorColor: Colors.red,
             // 指示器的大小，这里设置成与文字一样宽
