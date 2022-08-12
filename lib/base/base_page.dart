@@ -24,12 +24,22 @@ abstract class BasePageState<T extends BasePageWidget> extends State<T> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(pageTitle),
-      ),
-      body: buildContentView(),
-    );
+    return hasAppBar()
+        ? Scaffold(
+            appBar: AppBar(
+              title: Text(pageTitle),
+            ),
+            body: buildContentView(),
+          )
+        : Scaffold(
+            body: buildContentView(),
+          );
+  }
+
+  /// 是否有导航栏
+  /// true：有导航栏，false，没有导航栏
+  bool hasAppBar() {
+    return true;
   }
 
   ///  初始化数据

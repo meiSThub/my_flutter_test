@@ -34,6 +34,8 @@ import 'package:my_flutter_test/container/stack/stack_widget_home_page.dart';
 import 'package:my_flutter_test/container/stack/stack_widget_test.dart';
 import 'package:my_flutter_test/container/wrap/aspect_ration_widget_test.dart';
 import 'package:my_flutter_test/customwidget/custom_widget_test.dart';
+import 'package:my_flutter_test/drawer/drawer_widget_test_page.dart';
+import 'package:my_flutter_test/drawer/user_account_drawer_header_page.dart';
 import 'package:my_flutter_test/image/image_widget_test.dart';
 import 'package:my_flutter_test/pageskip/backroot/back_to_root_test_page.dart';
 import 'package:my_flutter_test/pageskip/namedroute/named_route_skip_test_page.dart';
@@ -113,6 +115,8 @@ final routerPath = {
   PageNum.appbarAddTopTabsTestPage2: (context) => const AppbarAddTopTabsTestPage2(),
   PageNum.appbarAddTopTabsTestPage3: (context) => const AppbarAddTopTabsTestPage3(),
   PageNum.tabBarControllerTestPage: (context) => const TabBarControllerTestPage(),
+  PageNum.drawerWidgetTestPage: (context) => const DrawerWidgetTestPage(),
+  PageNum.userAccountsDrawerHeaderPage: (context) => const UserAccountsDrawerHeaderPage(),
 };
 
 /// 2.定义创建路由与传参的方法，固定写法

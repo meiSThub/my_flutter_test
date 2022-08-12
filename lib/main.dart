@@ -52,7 +52,7 @@ class HomeContentState extends State<HomeContent> {
           crossAxisCount: 3,
           mainAxisSpacing: 10,
           crossAxisSpacing: 10,
-          childAspectRatio: 2 / 1,
+          childAspectRatio: 1 / 1,
         ),
         padding: const EdgeInsets.all(10),
         shrinkWrap: true,
@@ -83,6 +83,8 @@ class HomeContentState extends State<HomeContent> {
       PageRouteBean("实现App首页", PageNum.myHomePage),
       PageRouteBean("路由跳转", PageNum.routeSkipHomePage),
       PageRouteBean("AppBar导航栏组件", PageNum.appbarHomePage),
+      PageRouteBean("抽屉组件Drawer", PageNum.drawerWidgetTestPage),
+      PageRouteBean("userAccountsDrawerHeader", PageNum.userAccountsDrawerHeaderPage),
     ];
   }
 }
