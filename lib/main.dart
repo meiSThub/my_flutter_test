@@ -86,6 +86,8 @@ class HomeContentState extends State<HomeContent> {
       PageRouteBean("抽屉组件Drawer", PageNum.drawerWidgetTestPage),
       PageRouteBean("userAccountsDrawerHeader", PageNum.userAccountsDrawerHeaderPage),
       PageRouteBean("按钮组件", PageNum.buttonTestPage),
+      PageRouteBean("FloatingActionButton", PageNum.floatingActionButtonTestPage),
+      PageRouteBean("模拟咸鱼首页", PageNum.saltedFishHomePage),
     ];
   }
 }

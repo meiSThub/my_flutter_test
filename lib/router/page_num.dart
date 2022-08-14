@@ -50,4 +50,6 @@ class PageNum {
   static String drawerWidgetTestPage = "5016";
   static String userAccountsDrawerHeaderPage = "5017";
   static String buttonTestPage = "5018";
+  static String floatingActionButtonTestPage = "5019";
+  static String saltedFishHomePage = "5020";
 }
