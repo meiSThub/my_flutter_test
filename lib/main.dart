@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:my_flutter_test/pageskip/namedroute/named_route_skip_test_page.dart';
 import 'package:my_flutter_test/router/page_num.dart';
 
 import 'bean/page_route_bean.dart';
@@ -88,6 +87,8 @@ class HomeContentState extends State<HomeContent> {
       PageRouteBean("按钮组件", PageNum.buttonTestPage),
       PageRouteBean("FloatingActionButton", PageNum.floatingActionButtonTestPage),
       PageRouteBean("模拟咸鱼首页", PageNum.saltedFishHomePage),
+      PageRouteBean("输入控件TextField", PageNum.textFieldTestPage),
+      PageRouteBean("获取TextField内容", PageNum.getTextFieldContextTestPage),
     ];
   }
 }

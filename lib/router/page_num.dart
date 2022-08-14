@@ -52,4 +52,6 @@ class PageNum {
   static String buttonTestPage = "5018";
   static String floatingActionButtonTestPage = "5019";
   static String saltedFishHomePage = "5020";
+  static String textFieldTestPage = "5021";
+  static String getTextFieldContextTestPage = "5022";
 }
