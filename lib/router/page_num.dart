@@ -55,4 +55,5 @@ class PageNum {
   static String textFieldTestPage = "5021";
   static String getTextFieldContextTestPage = "5022";
   static String checkBoxTestPage = "5023";
+  static String radioTestPage = "5024";
 }

@@ -46,6 +46,7 @@ import 'package:my_flutter_test/pageskip/namedroute/named_route_skip_test_page.d
 import 'package:my_flutter_test/pageskip/normalroute/normal_route_skip_test_page.dart';
 import 'package:my_flutter_test/pageskip/replaceroute/replace_route_skip_test_page.dart';
 import 'package:my_flutter_test/pageskip/route_skip_home_page.dart';
+import 'package:my_flutter_test/radio/radio_test_page.dart';
 import 'package:my_flutter_test/router/page_num.dart';
 import 'package:my_flutter_test/text/text_widget_test.dart';
 import 'package:my_flutter_test/textfield/get_text_field_content_test_page.dart';
@@ -129,6 +130,7 @@ final routerPath = {
   PageNum.textFieldTestPage: (context) => const TextFieldTestPage(),
   PageNum.getTextFieldContextTestPage: (context) => const GetTextFieldContextTestPage(),
   PageNum.checkBoxTestPage: (context) => const CheckBoxTestPage(),
+  PageNum.radioTestPage: (context) => const RadioTestPage(),
 };
 
 /// 2.定义创建路由与传参的方法，固定写法

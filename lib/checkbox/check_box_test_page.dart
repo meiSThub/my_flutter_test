@@ -64,6 +64,7 @@ class _CheckBoxTestPageState extends BasePageState {
                 _isChecked = value;
               });
             },
+            // 添加图标
             secondary: const Icon(Icons.home),
           ),
         ),

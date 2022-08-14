@@ -90,6 +90,7 @@ class HomeContentState extends State<HomeContent> {
       PageRouteBean("输入控件TextField", PageNum.textFieldTestPage),
       PageRouteBean("获取TextField内容", PageNum.getTextFieldContextTestPage),
       PageRouteBean("多选框CheckBox", PageNum.checkBoxTestPage),
+      PageRouteBean("单选框Radio", PageNum.radioTestPage),
     ];
   }
 }
