@@ -10,6 +10,7 @@ import 'package:my_flutter_test/bottomnavigationbar/my_home_page.dart';
 import 'package:my_flutter_test/button/button_test_page.dart';
 import 'package:my_flutter_test/button/floating_action_button_test_page.dart';
 import 'package:my_flutter_test/button/salted_fish_home_test_page.dart';
+import 'package:my_flutter_test/checkbox/check_box_test_page.dart';
 import 'package:my_flutter_test/container/aspectratio/aspect_ration_widget_test.dart';
 import 'package:my_flutter_test/container/card/card_widget_advanced_test.dart';
 import 'package:my_flutter_test/container/card/card_widget_home.dart';
@@ -127,6 +128,7 @@ final routerPath = {
   PageNum.saltedFishHomePage: (context) => const SaltedFishHomePage(),
   PageNum.textFieldTestPage: (context) => const TextFieldTestPage(),
   PageNum.getTextFieldContextTestPage: (context) => const GetTextFieldContextTestPage(),
+  PageNum.checkBoxTestPage: (context) => const CheckBoxTestPage(),
 };
 
 /// 2.定义创建路由与传参的方法，固定写法

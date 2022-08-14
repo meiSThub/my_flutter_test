@@ -54,4 +54,5 @@ class PageNum {
   static String saltedFishHomePage = "5020";
   static String textFieldTestPage = "5021";
   static String getTextFieldContextTestPage = "5022";
+  static String checkBoxTestPage = "5023";
 }

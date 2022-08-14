@@ -89,6 +89,7 @@ class HomeContentState extends State<HomeContent> {
       PageRouteBean("模拟咸鱼首页", PageNum.saltedFishHomePage),
       PageRouteBean("输入控件TextField", PageNum.textFieldTestPage),
       PageRouteBean("获取TextField内容", PageNum.getTextFieldContextTestPage),
+      PageRouteBean("多选框CheckBox", PageNum.checkBoxTestPage),
     ];
   }
 }
