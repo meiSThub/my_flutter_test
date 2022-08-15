@@ -45,6 +45,13 @@ class _DateTimeHomePageState extends BasePageState {
           child: const Text("系统日期和时间选择器"),
         ),
         const SizedBox(height: 10),
+        ElevatedButton(
+          onPressed: () {
+            Navigator.pushNamed(context, PageNum.thirdDateAndTimeSelectorPage);
+          },
+          child: const Text("第三方日期和时间选择器"),
+        ),
+        const SizedBox(height: 10),
       ],
     );
   }
