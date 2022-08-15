@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter_test/router/page_num.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'bean/page_route_bean.dart';
 import 'router/route_path.dart';
@@ -26,6 +27,17 @@ class MyApp extends StatelessWidget {
         ),
         // 是否显示debug图标，默认为true，即显示，设置成false就可以关闭
         debugShowCheckedModeBanner: false,
+        // 国际化配置
+        localizationsDelegates: const [
+          //此处
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+        ],
+        supportedLocales: const [
+          //支持中文和英文
+          Locale('zh', 'CH'),
+          Locale('en', 'US'),
+        ],
         home: Scaffold(
           appBar: AppBar(title: const Text("首页")),
           body: const HomeContent(),
@@ -83,9 +95,11 @@ class HomeContentState extends State<HomeContent> {
       PageRouteBean("路由跳转", PageNum.routeSkipHomePage),
       PageRouteBean("AppBar导航栏组件", PageNum.appbarHomePage),
       PageRouteBean("抽屉组件Drawer", PageNum.drawerWidgetTestPage),
-      PageRouteBean("userAccountsDrawerHeader", PageNum.userAccountsDrawerHeaderPage),
+      PageRouteBean(
+          "userAccountsDrawerHeader", PageNum.userAccountsDrawerHeaderPage),
       PageRouteBean("按钮组件", PageNum.buttonTestPage),
-      PageRouteBean("FloatingActionButton", PageNum.floatingActionButtonTestPage),
+      PageRouteBean(
+          "FloatingActionButton", PageNum.floatingActionButtonTestPage),
       PageRouteBean("模拟咸鱼首页", PageNum.saltedFishHomePage),
       PageRouteBean("输入控件TextField", PageNum.textFieldTestPage),
       PageRouteBean("获取TextField内容", PageNum.getTextFieldContextTestPage),
