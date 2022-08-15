@@ -60,4 +60,5 @@ class PageNum {
   static String dateTimeHomePage = "5026";
   static String systemTimePage = "5027";
   static String thirdTimePage = "5028";
+  static String systemTimeSelectorPage = "5029";
 }

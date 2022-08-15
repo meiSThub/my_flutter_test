@@ -40,6 +40,7 @@ import 'package:my_flutter_test/container/wrap/aspect_ration_widget_test.dart';
 import 'package:my_flutter_test/customwidget/custom_widget_test.dart';
 import 'package:my_flutter_test/datetime/date_time_home_page.dart';
 import 'package:my_flutter_test/datetime/system_time_format_page.dart';
+import 'package:my_flutter_test/datetime/system_time_selector_page.dart';
 import 'package:my_flutter_test/datetime/third_time_format_page.dart';
 import 'package:my_flutter_test/drawer/drawer_widget_test_page.dart';
 import 'package:my_flutter_test/drawer/user_account_drawer_header_page.dart';
@@ -139,6 +140,7 @@ final routerPath = {
   PageNum.dateTimeHomePage: (context) => const DateTimeHomePage(),
   PageNum.systemTimePage: (context) => const SystemTimePage(),
   PageNum.thirdTimePage: (context) => const ThirdTimePage(),
+  PageNum.systemTimeSelectorPage: (context) => const SystemTimeSelectorPage(),
 };
 
 /// 2.定义创建路由与传参的方法，固定写法

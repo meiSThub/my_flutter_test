@@ -38,6 +38,13 @@ class _DateTimeHomePageState extends BasePageState {
           child: const Text("第三方时间格式化库：date_format"),
         ),
         const SizedBox(height: 10),
+        ElevatedButton(
+          onPressed: () {
+            Navigator.pushNamed(context, PageNum.systemTimeSelectorPage);
+          },
+          child: const Text("系统日期和时间选择器"),
+        ),
+        const SizedBox(height: 10),
       ],
     );
   }
