@@ -23,6 +23,8 @@ class _ButtonTestPageState extends BasePageState {
         const SizedBox(height: 10),
         _buildTextButton(),
         const SizedBox(height: 10),
+        _buildOutlinedButton(),
+        const SizedBox(height: 10),
         _buildIconButton(),
         const SizedBox(height: 10),
         _buildButtonBar(),
@@ -204,6 +206,52 @@ class _ButtonTestPageState extends BasePageState {
                 )
               ],
             ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  /// 线框按钮
+  Widget _buildOutlinedButton() {
+    return Card(
+      child: Container(
+        margin: const EdgeInsets.only(left: 10, right: 10),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              "线框按钮：OutlinedButton",
+              style: TextStyle(
+                  color: Colors.red, fontStyle: FontStyle.italic, fontSize: 22),
+            ),
+            OutlinedButton(
+              onPressed: () {},
+              child: const Text("线框按钮,默认样式"),
+            ),
+            const SizedBox(width: 10),
+            OutlinedButton(
+              onPressed: () {},
+              child: const Text("线框按钮，修改样式"),
+              style: ButtonStyle(
+                side: MaterialStateProperty.all(
+                  const BorderSide(
+                    color: Colors.red,
+                    width: 2,
+                  ),
+                ),
+                shape: MaterialStateProperty.all(
+                  RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10)),
+                ),
+              ),
+            ),
+            const SizedBox(width: 10),
+            OutlinedButton.icon(
+              onPressed: () {},
+              icon: const Icon(Icons.search),
+              label: const Text("带图标"),
+            )
           ],
         ),
       ),
