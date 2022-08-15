@@ -92,6 +92,7 @@ class HomeContentState extends State<HomeContent> {
       PageRouteBean("多选框CheckBox", PageNum.checkBoxTestPage),
       PageRouteBean("单选框Radio", PageNum.radioTestPage),
       PageRouteBean("开关组件Switch", PageNum.switchTestPage),
+      PageRouteBean("时间相关组件", PageNum.dateTimeHomePage),
     ];
   }
 }
