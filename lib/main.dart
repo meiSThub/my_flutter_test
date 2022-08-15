@@ -107,6 +107,8 @@ class HomeContentState extends State<HomeContent> {
       PageRouteBean("单选框Radio", PageNum.radioTestPage),
       PageRouteBean("开关组件Switch", PageNum.switchTestPage),
       PageRouteBean("时间相关组件", PageNum.dateTimeHomePage),
+      PageRouteBean("第三方轮播图组件Swiper", PageNum.thirdSwiperTestPage),
+      PageRouteBean("Swiper实现Banner", PageNum.thirdSwiperTestPage2),
     ];
   }
 }

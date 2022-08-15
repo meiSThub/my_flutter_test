@@ -53,6 +53,8 @@ import 'package:my_flutter_test/pageskip/replaceroute/replace_route_skip_test_pa
 import 'package:my_flutter_test/pageskip/route_skip_home_page.dart';
 import 'package:my_flutter_test/radio/radio_test_page.dart';
 import 'package:my_flutter_test/router/page_num.dart';
+import 'package:my_flutter_test/swiper/third_banner_swiper_page.dart';
+import 'package:my_flutter_test/swiper/third_banner_swiper_page2.dart';
 import 'package:my_flutter_test/switch/switch_page.dart';
 import 'package:my_flutter_test/text/text_widget_test.dart';
 import 'package:my_flutter_test/textfield/get_text_field_content_test_page.dart';
@@ -143,6 +145,8 @@ final routerPath = {
   PageNum.thirdTimePage: (context) => const ThirdTimePage(),
   PageNum.systemTimeSelectorPage: (context) => const SystemTimeSelectorPage(),
   PageNum.thirdDateAndTimeSelectorPage: (context) => const ThirdDateAndTimeSelectorPage(),
+  PageNum.thirdSwiperTestPage: (context) => const ThirdSwiperTestPage(),
+  PageNum.thirdSwiperTestPage2: (context) => const ThirdSwiperTestPage2(),
 };
 
 /// 2.定义创建路由与传参的方法，固定写法

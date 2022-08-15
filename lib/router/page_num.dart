@@ -62,4 +62,6 @@ class PageNum {
   static String thirdTimePage = "5028";
   static String systemTimeSelectorPage = "5029";
   static String thirdDateAndTimeSelectorPage = "5030";
+  static String thirdSwiperTestPage = "5031";
+  static String thirdSwiperTestPage2 = "5032";
 }
