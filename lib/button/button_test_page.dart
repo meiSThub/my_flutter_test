@@ -235,6 +235,7 @@ class _ButtonTestPageState extends BasePageState {
               onPressed: () {},
               child: const Text("线框按钮，修改样式"),
               style: ButtonStyle(
+                foregroundColor: MaterialStateProperty.all(Colors.red),
                 side: MaterialStateProperty.all(
                   const BorderSide(
                     color: Colors.red,
