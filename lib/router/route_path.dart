@@ -43,7 +43,7 @@ import 'package:my_flutter_test/datetime/system_time_format_page.dart';
 import 'package:my_flutter_test/datetime/system_date_time_selector_page.dart';
 import 'package:my_flutter_test/datetime/third_date_time_selector_page.dart';
 import 'package:my_flutter_test/datetime/third_time_format_page.dart';
-import 'package:my_flutter_test/dialog/switch_page.dart';
+import 'package:my_flutter_test/dialog/dialog_page.dart';
 import 'package:my_flutter_test/drawer/drawer_widget_test_page.dart';
 import 'package:my_flutter_test/drawer/user_account_drawer_header_page.dart';
 import 'package:my_flutter_test/image/image_widget_test.dart';

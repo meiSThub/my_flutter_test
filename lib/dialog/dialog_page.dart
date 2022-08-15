@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:my_flutter_test/base/base_page.dart';
 
+import 'components/custom_dialog.dart';
+
 /// Dialog 弹框组件
 class DialogTestPage extends BasePageWidget {
   const DialogTestPage({Key? key}) : super(key: key);
@@ -55,6 +57,13 @@ class _DialogTestPageState extends BasePageState {
             _showToast();
           },
           child: const Text("toast-fluttertoast第三方库"),
+        ),
+        const SizedBox(height: 20),
+        ElevatedButton(
+          onPressed: () {
+            _customDialog();
+          },
+          child: const Text("自定义Dialog"),
         ),
         const SizedBox(height: 20),
       ],
@@ -196,13 +205,22 @@ class _DialogTestPageState extends BasePageState {
   /// Toast
   void _showToast() {
     Fluttertoast.showToast(
-      msg: "提示消息",
-      toastLength: Toast.LENGTH_LONG,
-      gravity: ToastGravity.CENTER,
-      // 设置toast背景
-      backgroundColor: Colors.black,
-      fontSize: 16
-    );
+        msg: "提示消息",
+        toastLength: Toast.LENGTH_LONG,
+        gravity: ToastGravity.CENTER,
+        // 设置toast背景
+        backgroundColor: Colors.black,
+        fontSize: 16);
+  }
+
+  /// 自定义Dialog
+  void _customDialog() {
+    showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (context) {
+          return const CustomDialog();
+        });
   }
 
   @override
