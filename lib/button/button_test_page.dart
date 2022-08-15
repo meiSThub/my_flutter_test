@@ -62,8 +62,9 @@ class _ButtonTestPageState extends BasePageState {
                   },
                   child: const Text("修改文字样式"),
                   style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Colors.red),
                     // 修改文字颜色
-                    foregroundColor: MaterialStateProperty.all(Colors.red),
+                    foregroundColor: MaterialStateProperty.all(Colors.white),
                     textStyle: MaterialStateProperty.all(
                       const TextStyle(
                         // 无法通过color 修改文字颜色
