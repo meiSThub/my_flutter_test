@@ -43,6 +43,7 @@ import 'package:my_flutter_test/datetime/system_time_format_page.dart';
 import 'package:my_flutter_test/datetime/system_date_time_selector_page.dart';
 import 'package:my_flutter_test/datetime/third_date_time_selector_page.dart';
 import 'package:my_flutter_test/datetime/third_time_format_page.dart';
+import 'package:my_flutter_test/dialog/switch_page.dart';
 import 'package:my_flutter_test/drawer/drawer_widget_test_page.dart';
 import 'package:my_flutter_test/drawer/user_account_drawer_header_page.dart';
 import 'package:my_flutter_test/image/image_widget_test.dart';
@@ -147,6 +148,7 @@ final routerPath = {
   PageNum.thirdDateAndTimeSelectorPage: (context) => const ThirdDateAndTimeSelectorPage(),
   PageNum.thirdSwiperTestPage: (context) => const ThirdSwiperTestPage(),
   PageNum.thirdSwiperTestPage2: (context) => const ThirdSwiperTestPage2(),
+  PageNum.dialogTestPage: (context) => const DialogTestPage(),
 };
 
 /// 2.定义创建路由与传参的方法，固定写法

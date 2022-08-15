@@ -109,6 +109,7 @@ class HomeContentState extends State<HomeContent> {
       PageRouteBean("时间相关组件", PageNum.dateTimeHomePage),
       PageRouteBean("第三方轮播图组件Swiper", PageNum.thirdSwiperTestPage),
       PageRouteBean("Swiper实现Banner", PageNum.thirdSwiperTestPage2),
+      PageRouteBean("弹框Dialog", PageNum.dialogTestPage),
     ];
   }
 }
