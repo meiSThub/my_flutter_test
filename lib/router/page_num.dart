@@ -65,4 +65,5 @@ class PageNum {
   static String thirdSwiperTestPage = "5031";
   static String thirdSwiperTestPage2 = "5032";
   static String dialogTestPage = "5033";
+  static String httpHomePage = "5034";
 }
