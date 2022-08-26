@@ -111,6 +111,7 @@ class HomeContentState extends State<HomeContent> {
       PageRouteBean("Swiper实现Banner", PageNum.thirdSwiperTestPage2),
       PageRouteBean("弹框Dialog", PageNum.dialogTestPage),
       PageRouteBean("网络请求", PageNum.httpHomePage),
+      PageRouteBean("动画", PageNum.animationHomePage),
     ];
   }
 }

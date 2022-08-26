@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:my_flutter_test/animation/animation_home_page.dart';
+import 'package:my_flutter_test/animation/fade_animation_test.dart';
 import 'package:my_flutter_test/appbar/appbar_add_top_tabs_test_page.dart';
 import 'package:my_flutter_test/appbar/appbar_add_top_tabs_test_page2.dart';
 import 'package:my_flutter_test/appbar/appbar_add_top_tabs_test_page3.dart';
@@ -151,6 +153,8 @@ final routerPath = {
   PageNum.thirdSwiperTestPage2: (context) => const ThirdSwiperTestPage2(),
   PageNum.dialogTestPage: (context) => const DialogTestPage(),
   PageNum.httpHomePage: (context) => const HttpHomePage(),
+  PageNum.animationHomePage: (context) => const AnimationHomePage(),
+  PageNum.curvedAnimationTestPage: (context) => const CurvedAnimationTestPage(),
 };
 
 /// 2.定义创建路由与传参的方法，固定写法

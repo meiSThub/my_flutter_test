@@ -66,4 +66,6 @@ class PageNum {
   static String thirdSwiperTestPage2 = "5032";
   static String dialogTestPage = "5033";
   static String httpHomePage = "5034";
+  static String animationHomePage = "5035";
+  static String curvedAnimationTestPage = "5036";
 }
